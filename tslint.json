@@ -1,0 +1,36 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules" : {
+    "no-console" : false, // disable for TS
+    "object-literal-sort-keys": false,
+    "ordered-imports" : false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    // allow namespaces to organize interface definitions in TypeDoc
+    "no-namespace": false,
+    // no shadowing allowed except for types and interfaces so we can have same interface or type in different
+    // namespaces
+    "no-shadowed-variable": [
+      true,
+      {
+        //"class": false,
+        //"enum": false,
+        //"function": false,
+        "interface": false,
+        //"namespace": false,
+        "typeAlias": false
+        //"typeParameter": false,
+        //"import": false
+      }
+    ]
+  },
+  "jsRules": {
+    "no-console" : false // disable for JS    
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}
