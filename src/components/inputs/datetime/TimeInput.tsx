@@ -36,12 +36,7 @@ export default class extends React.Component<ITimeInputProps> {
   }
 
   private handleChange = (value: any) => {
-    // TODO: add handleChange for time input
-    // const newTime = value.replace(/-/g, ':');
-    // const time = newTime.substr(0, 5);
-    // const timeSeconds = newTime.padEnd(8, this.state.timeSeconds.substr(5, 3));
-    // const timeSecondsCustomColon = timeSeconds.replace(/:/g, '-');
-    // this.setState({time, timeSeconds, timeSecondsCustomColon});
+
   }
 
 }

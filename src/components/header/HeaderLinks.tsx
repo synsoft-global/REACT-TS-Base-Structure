@@ -82,37 +82,7 @@ class HeaderLinks extends React.Component<IHeaderLinksProps, IHeaderLinksState> 
             </p>
           </Hidden>
         </IconButton>
-        {/* </Target> */}
-        {/* <Popper
-          placement="bottom-start"
-          eventsEnabled={open}
-          className={classNames({ [classes.popperClose]: !open }) + ' ' + classes.pooperResponsive}
-        >
-          <ClickAwayListener onClickAway={this.handleClose}>
-            <Grow in={open} id="menu-list" style={{ transformOrigin: '0 0 0' }}>
-              <Paper className={classes.dropdown}>
-                <MenuList role="menu">
-                  <MenuItem onClick={this.handleClose} className={classes.dropdownItem}>
-                    Mike John responded to your email
-                  </MenuItem>
-                  <MenuItem onClick={this.handleClose} className={classes.dropdownItem}>
-                    You have 5 new tasks
-                  </MenuItem>
-                  <MenuItem onClick={this.handleClose} className={classes.dropdownItem}>
-                    You're now friend with Andrew
-                  </MenuItem>
-                  <MenuItem onClick={this.handleClose} className={classes.dropdownItem}>
-                    Another Notification
-                  </MenuItem>
-                  <MenuItem onClick={this.handleClose} className={classes.dropdownItem}>
-                    Another One
-                  </MenuItem>
-                </MenuList>
-              </Paper>
-            </Grow>
-          </ClickAwayListener>
-        </Popper>
-      </Manager> */}
+
         <IconButton color='inherit' aria-label='Person' className={classes.buttonLink}>
           <Person className={classes.links} />
           <Hidden mdUp={true}>
@@ -130,9 +100,6 @@ class HeaderLinks extends React.Component<IHeaderLinksProps, IHeaderLinksState> 
     this.setState({ open: !this.state.open });
   };
 
-  // private handleClose = () => {
-  //   this.setState({ open: false });
-  // }
 }
 
 export default withRouter(withStyles(styles)(HeaderLinks));

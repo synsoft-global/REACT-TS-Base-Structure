@@ -76,7 +76,4 @@ export default withStyles(headerStyle)(function HeaderNoStyles(props) {
   );
 } as React.SFC<IHeaderProps>);
 
-// Header_.propTypes = {
-//   classes: PropTypes.object.isRequired,
-//   color: PropTypes.oneOf(['primary', 'info', 'success', 'warning', 'danger'])
-// };
+

@@ -10,10 +10,6 @@ import Dropzone from 'react-dropzone';
 import { LinearProgress } from '@material-ui/core';
 
 export interface IDropAndUploadFileProps {
-  /** Firebase storage bucket where file will be stored */
-  // bucket : NBucket.TAll;
-  /** Firebase leaf node where file will be stored */
-  // nodeName: string;
   onError: () => void;
   onPaused: () => void;
   onResumed: () => void;
@@ -49,15 +45,6 @@ class DropAndUploadFile extends React.Component<IDropAndUploadFileProps> {
           <br />
           <LinearProgress variant="determinate" value={this.state.progress} />
         </div>
-
-        {/* <aside>
-          <h2>Dropped files</h2>
-          <ul>
-            {
-              this.state.files.map(f => <li key={f.name}>{f.name} - {f.size} bytes</li>)
-            }
-          </ul>
-        </aside> */}
       </section>
     );
   }
@@ -65,6 +52,4 @@ class DropAndUploadFile extends React.Component<IDropAndUploadFileProps> {
 
 export default DropAndUploadFile;
 
-// export const Video = withVideo(DropAndUploadFile);
-// export const ImageOrVideo = withImageOrVideo(DropAndUploadFile);
 

@@ -10,7 +10,7 @@ const style = {
   }
 };
 
-// doc: https://demos.creative-tim.com/material-kit-pro-react/?_ga=2.109857984.49214816.1546719710-262299143.1546719710#/documentation/grid
+
 function GridItem({ ...props }) {
   const { classes, children, className, ...rest } = props;
   return (

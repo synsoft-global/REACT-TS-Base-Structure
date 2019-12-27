@@ -46,9 +46,6 @@ export default withStyles(styles)((props => {
           return <hr key={key} />;
         }
 
-        // if (prop.redirect) {
-        //   return null;
-        // }
 
         const listItemClasses = cx({
           [' ' + classes[color]]: activeRoute(prop.path)

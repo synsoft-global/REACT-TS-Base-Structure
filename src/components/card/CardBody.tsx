@@ -43,17 +43,4 @@ function CardBody({ ...props }) {
   );
 }
 
-// CardBody.propTypes = {
-//   classes: PropTypes.object.isRequired,
-//   className: PropTypes.string,
-//   background: PropTypes.bool,
-//   plain: PropTypes.bool,
-//   formHorizontal: PropTypes.bool,
-//   pricing: PropTypes.bool,
-//   signup: PropTypes.bool,
-//   color: PropTypes.bool,
-//   profile: PropTypes.bool,
-//   calendar: PropTypes.bool
-// };
-
 export default withStyles(cardBodyStyle)(CardBody);

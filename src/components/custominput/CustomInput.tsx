@@ -85,18 +85,4 @@ function CustomInput({ ...props }) {
   );
 }
 
-// CustomInput.propTypes = {
-//   classes: PropTypes.object.isRequired,
-//   labelText: PropTypes.node,
-//   labelProps: PropTypes.object,
-//   id: PropTypes.string,
-//   inputProps: PropTypes.object,
-//   formControlProps: PropTypes.object,
-//   inputRootCustomClasses: PropTypes.string,
-//   error: PropTypes.bool,
-//   success: PropTypes.bool,
-//   white: PropTypes.bool,
-//   helpText: PropTypes.node
-// };
-
 export default withStyles(customInputStyle)(CustomInput);

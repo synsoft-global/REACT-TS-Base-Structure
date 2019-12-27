@@ -44,39 +44,4 @@ function RegularButton({ ...props }) {
   );
 }
 
-// RegularButton.propTypes = {
-//   classes: PropTypes.object.isRequired,
-//   color: PropTypes.oneOf([
-//     "primary",
-//     "info",
-//     "success",
-//     "warning",
-//     "danger",
-//     "rose",
-//     "white",
-//     "twitter",
-//     "facebook",
-//     "google",
-//     "linkedin",
-//     "pinterest",
-//     "youtube",
-//     "tumblr",
-//     "github",
-//     "behance",
-//     "dribbble",
-//     "reddit",
-//     "transparent"
-//   ]),
-//   size: PropTypes.oneOf(["sm", "lg"]),
-//   simple: PropTypes.bool,
-//   round: PropTypes.bool,
-//   fullWidth: PropTypes.bool,
-//   disabled: PropTypes.bool,
-//   block: PropTypes.bool,
-//   link: PropTypes.bool,
-//   justIcon: PropTypes.bool,
-//   className: PropTypes.string,
-//   muiClasses: PropTypes.object
-// };
-
 export default withStyles(styles)(RegularButton);
